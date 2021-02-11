@@ -1,0 +1,48 @@
+<div class="order-list-container">
+    <div class="top-buttons">
+        <button mat-raised-button color="primary" (click)="requestOber()"
+            class="order-button">{{'ORDER.ORDER_REQUESTOBER' | translate}}</button>
+
+    </div>
+    <div>
+        <mat-card class="order-card">
+            <h2 class="card-title">{{'ORDER.ORDER_NOTYETORDERED' | translate}}</h2>
+            <div class="order-list">
+                <div class="order-item" *ngFor="let order of orderList">
+                    <p class="amount">1x</p>
+                    <p class="name">{{order.consumption.name}}</p>
+                    <p class="price">{{order.consumption.price | currency:'EUR'}}</p>
+                    <button mat-icon-button class="delete-button" (click)="deleteOrder(order.id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="order-info" *ngIf="orderList.length > 0">
+                <p>Totaal: <span *ngIf="totalInOrder">{{totalInOrder | currency:'EUR'}}</span><span
+                        *ngIf="!totalInOrder">{{0 | currency:'EUR'}}</span></p>
+                <button mat-raised-button color="primary" (click)="openDialog()"
+                    class="order-button">{{'ORDER.ORDER_ORDER' | translate}}</button>
+            </div>
+            <div *ngIf="orderList.length == 0">
+                <p style="text-align: center;">{{'ORDER.ORDER_NO_ORDERS1' | translate}} <br/>{{'ORDER.ORDER_NO_ORDERS2' | translate}}</p>
+            </div>
+        </mat-card>
+        <mat-card class="order-card" *ngIf="totalAmount">
+            <h2 class="card-title">{{'ORDER.ORDER_ALREADYORDERED' | translate}}</h2>
+            <div class="already-ordered-list">
+                <div class="order-item" *ngFor="let order of alreadyOrderedList">
+                    <p class="amount">1x</p>
+                    <p class="name">{{order.consumption.name}}</p>
+                    <p class="price">{{order.consumption.price | currency:'EUR'}}</p>
+                    <mat-icon *ngIf="order.ready" style="margin-left: 10px;">check</mat-icon>
+                </div>
+            </div>
+            <div class="order-info">
+                <p>Totaal: <span *ngIf="totalAmount">{{totalAmount | currency:'EUR'}}</span><span
+                        *ngIf="!totalAmount">{{0 | currency:'EUR'}}</span></p>
+                <button mat-raised-button color="secondary" class="order-button orders-pay"
+                    (click)="payOrders()">{{'ORDER.ORDER_PAY' | translate}}</button>
+            </div>
+        </mat-card>
+    </div>
+</div>

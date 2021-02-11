@@ -1,0 +1,46 @@
+{
+    "HOME": {
+        "TABLE": "Tafel",
+        "EXPLANATION": "Bestel je eten op een nieuwe en interactieve manier:",
+        "ORDER": "Bestellen",
+        "BORING_EXPLANATION": "Of bestel in plaats daarvan op de klassieke wijze:",
+        "MENU_CARD": "Menukaart"
+    },
+    "SCAN": {
+        "INFO": "Met deze app bestel je gemakkelijk en snel je eten.",
+        "WELCOME": "Welkom bij feedme!",
+        "SCANNING": "Scan de QR-code op tafel om te beginnen."
+    },
+    "MENU": {
+        "FILTER_CONFIRM": "Bevestigen",
+        "ADD_ORDER" : "Voeg toe aan bestelling",
+        "SORT_ALL" : "Alles",
+        "SORT_FOOD" : "Eten",
+        "SORT_DRINK" : "Drinken",
+        "FILTER_OPTIONS" : "Filter opties",
+        "FILTER_CLOSE" : "Sluiten"
+
+    },
+    "ASK_NAME": {
+        "DESCRIPTION": "Vul hier je naam in:",
+        "NICKNAME": "Naam",
+        "JOIN": "Deelnemen"
+    },
+    "ORDER": {
+        "ORDER_ALREADYORDERED": "Reeds besteld",
+        "ORDER_NOTYETORDERED": "Bestellingen",
+        "ORDER_PAY": "Betalen",
+        "ORDER_REQUESTOBER": "Vraag naar ober",
+        "ORDER_ORDER": "Bestel",
+        "ORDER_ORDERMORE": "Bestel meer",
+        "ORDER_NO_ORDERS1" : "Je hebt nog niks besteld.",
+        "ORDER_NO_ORDERS2" : "Je kunt iets bestellen door bovenaan op de home knop de drukken."
+    },
+    "PAYMENT": {
+        "APPROVED": "Betaling voltooid!"
+    },
+    "LOGGED_OUT_DIALOG": {
+        "MESSAGE": "Je bent uitgelogd! We brengen u terug naar het beginscherm.",
+        "BUTTON": "Verder"
+    }
+}

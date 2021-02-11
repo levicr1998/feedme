@@ -1,0 +1,15 @@
+
+<div class="home-container">
+    <h1 style="margin: 0;">{{'HOME.TABLE' | translate}} {{tableNumber}}</h1>
+    
+    <mat-card class="action-box">
+        <p>{{'HOME.EXPLANATION' | translate}}</p>
+        <mat-card-actions>
+        <a class="btn_orderdrinks" mat-stroked-button [routerLink]="['/cards-order']" [queryParams]="{type: 'drinks'}"><img class="imgDrinks" src="assets/drink.svg"></a>
+            <a class="btn_orderfood" mat-stroked-button [routerLink]="['/cards-order']" [queryParams]="{type: 'food'}"><img class="imgFood" src="assets/food.svg"></a>
+        </mat-card-actions>
+    </mat-card>
+    <div class="qr-container">
+        <img style="width: 300px;" *ngIf="qrCode" [src]="qrCode">
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="order-list">
+    <mat-card class="order-card" *ngFor="let table of tables; index as i">
+        <mat-card-title class="table-number">{{table.number}}</mat-card-title>
+       <div *ngIf='checkOber(table.id)'>
+        <p style="text-align: center; margin: 0;">Heeft een ober nodig</p> <!-- *ngIf='checkOber(table[i].restaurantTable.id)'-->
+    </div>
+        <mat-card-content class="content">
+            <div class="order" *ngFor="let consumption of table.consumptions; index as j" (click)="onReadyClick(i, j); $event.stopPropagation();" [ngClass]="consumption.orders.length == 1 ? 'order-hover' : (consumption.orders.length == 0 ? 'hidden' : undefined)">
+                <div class="alert-dot" [ngClass]="consumption && !consumption.new ? 'shrink' : undefined"></div>
+                <p class="amount">{{consumption.orders.length}}x</p>
+                <div> <!-- (click)="orderReady(i, order.id)" -->
+                    <p class="name">{{consumption.name}}</p>
+                </div>
+                
+                <div class="check-box" [@readyAmountAnimator]="animationStates[i][j]">
+                    <div class="amount-part" *ngIf="!(animationStates[i][j] && animationStates[i][j].value == 'opened')">
+                        0&nbsp;/&nbsp;{{consumption.orders.length}}
+                    </div>
+                    <div class="amount-container" [id]="'checkbox' + i + '-' + j" [ngClass]="!(animationStates[i][j] && animationStates[i][j].value == 'opened') ? 'hidden' : undefined">
+                        <div class="amount-block" *ngFor="let a of Arr(consumption.orders.length + 1).fill(1); index as k" (click)="orderReady(i, j, k); $event.stopPropagation();">
+                            {{k == 0 ? 'X' : k}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+        <p class="ready-text">Klaar</p>
+        <div class="ready-container"> <!-- if any order ready -->
+            <div class="order ready-order" *ngFor="let consumption of table.readyConsumptions">
+                <p class="amount">{{consumption.orders.length}}x</p>
+                <div>
+                    <p class="name">{{consumption.name}}</p>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

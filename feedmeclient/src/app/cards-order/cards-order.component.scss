@@ -1,0 +1,170 @@
+.cards-order-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+mat-card {
+	position: absolute;
+	width: 300px;
+	height: 410px;
+	padding: 16px 16px 24px 16px;
+	user-select: none;
+	transition: margin-top 0.2s;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		height: 221px;
+        object-fit: cover;
+        pointer-events: none;
+	}
+}
+
+mat-card-header {
+	justify-content: center;
+}
+
+mat-card-header mat-card-title {
+	font-size: 23px;
+}
+
+mat-card.lowered {
+	margin-top: 20px;
+}
+
+mat-card-content p {
+	font-size: 17px;
+	text-align: center;
+	height: 66px;
+	overflow: hidden;
+}
+
+mat-card-actions {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 5px 15px 5px;
+	padding: 0;
+	margin-top: auto;
+}
+
+// ::ng-deep .mat-icon{
+//     height:48px !important;
+//     width:48px !important;
+//     font-size:48px !important;
+// }
+
+mat-card-actions {
+	.mat-icon-button {
+		width: 50px;
+		height: 50px;
+
+		.mat-icon {
+			font-size: 38px;
+			width: 40px;
+		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+	pointer-events: none;
+}
+
+.fade-bg {
+	transition: background-color 0.4s ease 0s;
+}
+
+.info-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.cards-order-guide {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 101;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.guide-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+
+		p {
+			font-size: 14pt;
+			width: 70%;
+			text-align: center;
+		}
+	}
+
+	.swipe-guide {
+		justify-content: center;
+	}
+
+	mat-icon {
+		font-size: 52px;
+		width: 52px;
+		height: 52px;
+	}
+
+	.swipe-container {
+		width: 230px;
+		height: 60px;
+		border: 5px solid white;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		margin-top: 200px;
+
+		mat-icon {
+			margin-left: 180px;
+			transition: margin 0.3s linear;
+		}
+
+		mat-icon.rotate {
+			transform: rotate(180deg);
+		}
+	}
+
+	.continue-text {
+		margin-top: auto;
+		margin-bottom: 100px;
+	}
+
+	.menu-container {
+		margin-top: 45px;
+		height: 104px;
+	}
+}
+
+.info-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+::ng-deep .mat-simple-snackbar {
+	justify-content: center !important;
+}

@@ -1,0 +1,32 @@
+<div class="welcome-content">
+    <mat-card>
+        <div class="feedme-info">
+            <div>
+                <!-- <img style="width: 80px;" src="../../assets/feedme.svg"> -->
+                <h1 style="margin: 0;" class="title">Feed Me</h1>
+            </div>
+            <h4 style="margin:0;">{{'SCAN.WELCOME' | translate}}</h4>
+            <p>{{'SCAN.INFO' | translate}}</p>
+            <p>{{'SCAN.SCANNING' | translate}}</p>
+
+            <div class="flags">
+                <div matRipple class="flag" [ngClass]="{'selected': this.translate.currentLang == 'nl'}"
+                    (click)="changeLanguage('nl')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg">
+                </div>
+                <div matRipple class="flag" [ngClass]="{'selected': this.translate.currentLang == 'en'}"
+                    (click)="changeLanguage('en')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg">
+                </div>
+            </div>
+
+        </div>
+        <div class="qr-card-content">
+            <zxing-scanner #scanner (doubleTap)="changeCamera()" (scanSuccess)="scanSuccessHandler($event)"
+                (camerasFound)="camerasFoundHandler($event)">
+            </zxing-scanner>
+        </div>
+        <button mat-raised-button *ngIf="cameras.length > 1" color="primary" class="bottom-button"
+            (click)="changeCamera()">Change camera</button>
+    </mat-card>
+</div>

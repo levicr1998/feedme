@@ -1,0 +1,95 @@
+.order-list-container {
+	display: flex;
+	flex-direction: column;
+
+	.top-buttons {
+		display: flex;
+		justify-content: space-evenly;
+        margin: 20px 20px;
+	}
+
+	.order-button {
+		width: 70%;
+	}
+
+	.orders-pay {
+		background-color: #43A047;
+	}
+}
+
+.order-card {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0 20px 20px 20px;
+	flex-grow: 1;
+    min-height: 0;
+}
+
+.order-list,
+.already-ordered-list {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.already-ordered-list .order-item {
+	color: gray;
+}
+
+.already-ordered-list {
+	max-height: 35%;
+}
+
+.order-item {
+	height: 60px;
+	display: flex;
+	border-bottom: 1px dashed white;
+	padding: 0 12px 0 20px;
+	align-items: center;
+
+	.amount {
+		flex-basis: 12%;
+	}
+
+	.name {
+		flex-basis: 54%;
+	}
+
+	.price {
+		flex-basis: 20%;
+		text-align: center;
+	}
+
+	.delete-button {
+		margin-left: auto;
+	}
+}
+
+.order-item:last-child {
+	border-bottom: none;
+}
+
+.order-info {
+	display: flex;
+	align-items: center;
+	padding: 20px 20px 20px 20px;
+
+    p{
+        text-align: center;
+        margin: 0;
+        flex-basis: 50%;
+    }
+
+    .order-button {
+        flex-basis: 50%;
+    }
+}
+
+.card-title {
+	text-align: center;
+	margin: 0 !important;
+	padding: 8px 0;
+	background-color: #616161;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 4px 4px 0 0;
+}

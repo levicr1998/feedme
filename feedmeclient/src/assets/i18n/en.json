@@ -1,0 +1,46 @@
+{
+    "HOME": {
+        "TABLE": "Table",
+        "EXPLANATION": "Order your food in a new and interactive way:",
+        "ORDER": "Start ordering",
+        "BORING_EXPLANATION": "Or use the classic way of ordering food:",
+        "MENU_CARD": "Menu"
+    },
+    "SCAN": {
+        "INFO": "Use this app to order food, fast and easy!",
+        "WELCOME": "Welcome!",
+        "SCANNING": "Scan the QR-code on the table to start."
+    },
+    "MENU": {
+        "FILTER_CONFIRM": "Confirm",
+        "ADD_ORDER" : "Add to the order",
+        "SORT_ALL" : "All",
+        "SORT_FOOD" : "Food",
+        "SORT_DRINK" : "Drinks",
+        "FILTER_OPTIONS" : "Filter options",
+        "FILTER_CLOSE" : "Close"
+    },
+    "ASK_NAME": {
+        "DESCRIPTION": "Enter your nickname:",
+        "NICKNAME": "Nickname",
+        "JOIN": "Join table"
+    },
+    "ORDER" : {
+    "ORDER_ALREADYORDERED" : "Ordered earlier",
+    "ORDER_NOTYETORDERED" : "Orders",
+    "ORDER_PAY" : "Pay",
+    "ORDER_REQUESTOBER" : "Request waiter",
+    "ORDER_ORDER" : "Order",
+    "ORDER_ORDERMORE" : "Order more",
+    "ORDER_NO_ORDERS1" : "You haven't yet ordered.",
+        "ORDER_NO_ORDERS2" : "You can order something by pressing the home button above."
+    },
+    "PAYMENT": {
+        "APPROVED": "Payment approved!"
+    },
+    "LOGGED_OUT_DIALOG": {
+        "MESSAGE": "You are logged out! You will be sent back to the welcome screen.",
+        "BUTTON": "Continue"
+    }
+
+}

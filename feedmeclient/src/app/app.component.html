@@ -1,0 +1,12 @@
+<div id="page" style="display: flex; flex-direction: column; height: 100%;">
+<div class="navbar-container" *ngIf="!urlIncluded">
+    <mat-toolbar class="navbar" [class.mat-elevation-z3]="true">
+        <a class="btn_home" mat-icon-button [routerLink]="['/home']"><mat-icon>home</mat-icon></a>
+        <a class="btn_menu" mat-icon-button [routerLink]="['/menu']"><img src="assets/menu_icon.svg" width="24px" height="24px"></a>
+        <a class="btn_order-list" mat-icon-button [routerLink]="['/order-list']"><mat-icon [matBadge]="orderAmount" matBadgePosition="above after">shopping_basket</mat-icon></a>
+    </mat-toolbar>
+</div>
+<div class="content">
+    <router-outlet (activate)="checkUrl($event)"></router-outlet>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<div class="ask-name-container">
+    <mat-card>
+        <h3>{{'ASK_NAME.DESCRIPTION' | translate}}</h3>
+        <mat-card-content>
+            <mat-form-field class="full-width">
+                <input matInput id="nickname" placeholder="{{'ASK_NAME.NICKNAME' | translate}}" value=""
+                    [(ngModel)]="nickname">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" id="btn_jointable" (click)="joinTable()">{{'ASK_NAME.JOIN' | translate}}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

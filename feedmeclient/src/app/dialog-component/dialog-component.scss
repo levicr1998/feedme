@@ -1,0 +1,15 @@
+::ng-deep {
+    background-color:red;
+    color:white;
+}
+
+.btnOk{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 79.0.3945 (Windows 10.0.0)" package="" timestamp="2020-01-08T09:25:05" id="0" hostname="DESKTOP-RDBV1GH" tests="32" errors="0" failures="0" time="7.953">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.0 Safari/537.36"/>
+  </properties>
+  <testcase name="WelcomeComponent should create" time="0.687" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).WelcomeComponent"/>
+  <testcase name="MenuComponent should create" time="0.61" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).MenuComponent"/>
+  <testcase name="ConsumptieService getAllConsumptions() should return data" time="0.018" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).ConsumptieService"/>
+  <testcase name="BadgeService should be created" time="0.011" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).BadgeService"/>
+  <testcase name="Ingredient should create an instance" time="0.001" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).Ingredient"/>
+  <testcase name="HomeComponent should render food button in a tag" time="0.38" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).HomeComponent"/>
+  <testcase name="HomeComponent should create" time="0.539" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).HomeComponent"/>
+  <testcase name="HomeComponent should render drinks button in a tag" time="0.294" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).HomeComponent"/>
+  <testcase name="HomeComponent clicking button should go to food page" time="0.342" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).HomeComponent"/>
+  <testcase name="HomeComponent clicking button should go to drinks page" time="0.28" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).HomeComponent"/>
+  <testcase name="OrdersComponent should create" time="0.359" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).OrdersComponent"/>
+  <testcase name="RestService right link with  getRestUrl()" time="0.038" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).RestService"/>
+  <testcase name="Consumption should create an instance" time="0.001" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).Consumption"/>
+  <testcase name="OrderListComponent should create" time="0.284" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).OrderListComponent"/>
+  <testcase name="CancelPaymentComponent should create" time="0.018" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CancelPaymentComponent"/>
+  <testcase name="AppComponent clicking button should go to Menu page" time="0.33" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent clicking button should go to Menu page" time="0.339" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.282" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent clicking button should go to Home page" time="0.363" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent clicking button should go to OrderList page" time="0.413" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AskNameComponent clicking button should go to another page" time="0.443" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AskNameComponent"/>
+  <testcase name="AskNameComponent should create" time="0.293" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AskNameComponent"/>
+  <testcase name="OrderService getAllOrders() should return data" time="0.016" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).OrderService"/>
+  <testcase name="OrderService postOrder() should POST and return data" time="0.022" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).OrderService"/>
+  <testcase name="OrderService removeOrder() should DELELTE and return message" time="0.013" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).OrderService"/>
+  <testcase name="restaurant-table-service get Table By Token" time="0.021" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).restaurant-table-service"/>
+  <testcase name="restaurant-table-service checks if token exists" time="0.011" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).restaurant-table-service"/>
+  <testcase name="CardsOrderComponent swipeRight function works" time="0.352" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CardsOrderComponent"/>
+  <testcase name="CardsOrderComponent should create Cards Order Content" time="0.314" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CardsOrderComponent"/>
+  <testcase name="CardsOrderComponent swipeLeft function works" time="0.303" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CardsOrderComponent"/>
+  <testcase name="CardsOrderComponent should load a card with consumption" time="0.313" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CardsOrderComponent"/>
+  <testcase name="CardsOrderComponent should create" time="0.263" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CardsOrderComponent"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: 'Permissions not set yet, waiting for them to be set to apply device change.'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: [Object{id: 1, price: 12, foodType: 'DESSERT', image: 'sddas', name: 'Toetje', description: 'Lekker toetje', ingredients: [], sortingValue: 1}, Object{id: 1, price: 13, foodType: 'MAIN', image: 'sddas', name: 'Biefstukje', description: 'Lekker toetje', ingredients: [], sortingValue: 2}, Object{id: 1, price: 4, foodType: 'STARTER', image: 'sddas', name: 'Carpaccio', description: 'Lekker carpaccio', ingredients: [], sortingValue: 1}]
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: '@zxing/ngx-scanner', 'Error when asking for permission.', DOMException{}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: '@zxing/ngx-scanner', 'Not supported'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: null
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: NaN
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: 'Spec 'AppComponent clicking button should go to Menu page' has no expectations.'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined, currentComponent: 'MenuComponent'}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: 'Spec 'AppComponent clicking button should go to Menu page' has no expectations.'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined, currentComponent: 'MenuComponent'}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: 'Spec 'AppComponent clicking button should go to Home page' has no expectations.'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined, currentComponent: 'HomeComponent'}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Initialize WebSocket Connection'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Opening Web Socket...'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) WARN: 'Spec 'AppComponent clicking button should go to OrderList page' has no expectations.'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) ERROR: 'Error during cleanup of component', Object{component: AppComponent{route: ActivatedRoute{url: ..., params: ..., queryParams: ..., fragment: ..., data: ..., outlet: ..., component: ..., _futureSnapshot: ..., snapshot: ..., _routerState: ...}, router: Router{rootComponentType: ..., urlSerializer: ..., rootContexts: ..., location: ..., config: ..., lastSuccessfulNavigation: ..., currentNavigation: ..., navigationId: ..., isNgZoneEnabled: ..., events: ..., errorHandler: ..., malformedUriErrorHandler: ..., navigated: ..., lastSuccessfulId: ..., hooks: ..., urlHandlingStrategy: ..., routeReuseStrategy: ..., onSameUrlNavigation: ..., paramsInheritanceStrategy: ..., urlUpdateStrategy: ..., relativeLinkResolution: ..., ngModule: ..., console: ..., currentUrlTree: ..., rawUrlTree: ..., browserUrlTree: ..., configLoader: ..., routerState: ..., transitions: ..., navigations: ...}, translate: TranslateService{store: ..., currentLoader: ..., compiler: ..., parser: ..., missingTranslationHandler: ..., useDefaultLang: ..., isolate: ..., pending: ..., _onTranslationChange: ..., _onLangChange: ..., _onDefaultLangChange: ..., _langs: ..., _translations: ..., _translationRequests: ..., loadingTranslations: ...}, webSocketAPI: WebsocketAPIService{webSocketEndPoint: ..., topic: ..., ordersComponent: ..., stompClient: ...}, badgeService: BadgeService{orderAmountSource: ..., orderAmount$: ...}, orderService: OrderService{http: ..., tableService: ..., orderUrl: ...}, tableService: RestaurantTableService{restService: ..., http: ..., router: ..., tableUrl: ...}, title: 'feedmeclient', hideNavbarComponents: [..., ...], orderAmount: undefined, currentComponent: 'OrderListComponent'}, stacktrace: TypeError: Cannot read property 'unsubscribe' of undefined
+TypeError: Cannot read property 'unsubscribe' of undefined
+    at AppComponent.ngOnDestroy (http://localhost:9877/_karma_webpack_/src/app/app.component.ts:54:23)
+    at callProviderLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32334:1)
+    at callElementProvidersLifecycles (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32293:1)
+    at callLifecycleHooksChildrenFirst (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:32275:1)
+    at destroyView (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:44498:1)
+    at callWithDebugContext (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45632:1)
+    at Object.debugDestroyView [as destroyView] (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:45208:1)
+    at ViewRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31162:1)
+    at ComponentRef_.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30853:16)
+    at ComponentFixture.destroy (http://localhost:9877/_karma_webpack_/node_modules/@angular/core/fesm2015/testing.js:419:1)}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: undefined
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Joining table'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: Observable{_isScalar: true, _subscribe: subscriber => { ... }, value: Object{token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ0YWJsZUlkIjo3NzcsImV4cCI6MTU3NjE1MjUwOSwib3BlbmVkQXQiOjE1NzYwNjYxMDl9._x1UMrKE27Vd3nEv_CxXvCm-Wmg5-HROk6lBSYIf17fSil6qR4qOL3JHgZS1TOECIBTz_idg4BZsFEcuJmN9_Q', guest: Object{id: ..., name: ...}}}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: Object{token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ0YWJsZUlkIjo3NzcsImV4cCI6MTU3NjE1MjUwOSwib3BlbmVkQXQiOjE1NzYwNjYxMDl9._x1UMrKE27Vd3nEv_CxXvCm-Wmg5-HROk6lBSYIf17fSil6qR4qOL3JHgZS1TOECIBTz_idg4BZsFEcuJmN9_Q', guest: Object{id: 778, name: 'Levi'}}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: undefined
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: [Object{id: 1, restaurantTable: Object{id: ..., guests: ..., number: ..., privateQrCode: ..., date: ...}, consumption: null, note: 'Hoi', isPaid: false, isReady: false, amount: 20}, Object{id: 2, restaurantTable: Object{id: ..., guests: ..., number: ..., privateQrCode: ..., date: ...}, consumption: null, note: 'Hoi', isPaid: false, isReady: false, amount: 20}, Object{id: 3, restaurantTable: Object{id: ..., guests: ..., number: ..., privateQrCode: ..., date: ...}, consumption: null, note: 'Hoi', isPaid: false, isReady: false, amount: 20}]
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: Object{id: 1, guests: [], number: 20, privateQrCode: '123456', date: '22-02-11'}
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Whoops! Lost connection to http://localhost:8086/stomp'
+,HeadlessChrome 79.0.3945 (Windows 10.0.0) LOG: 'Whoops! Lost connection to http://localhost:8086/stomp'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

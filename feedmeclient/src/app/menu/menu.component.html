@@ -1,0 +1,70 @@
+<div class="container-center">
+
+  <div [hidden]="filterHidden" class="filter-options">
+    <div class="filter-top">
+      <p style="text-align: center;">{{ 'MENU.FILTER_OPTIONS' | translate}}</p>
+      <button mat-icon-button (click)="filterHidden = true; enableScroll();">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="container-checkboxes">
+      <mat-checkbox *ngFor="let obj of properties" checked="true" value="{{obj}}" (change)="filterInclude(obj)" class="allergen-checkbox">
+        {{obj}}
+      </mat-checkbox>
+    </div>
+    <mat-divider></mat-divider>
+    <form class="consumption-type-form">
+      <mat-radio-group class="radio-group" [(ngModel)]="consumptionSorting" name='radiobuttonsSorting'
+        (change)="filterConsumptions()">
+        <mat-radio-button class="consumptionButton" [value]='undefined'>{{ 'MENU.SORT_ALL' | translate}}</mat-radio-button>
+        <mat-radio-button class="consumptionButton" [value]='1'>{{ 'MENU.SORT_DRINK' | translate}}</mat-radio-button>
+        <mat-radio-button class="consumptionButton" [value]='0'>{{ 'MENU.SORT_FOOD' | translate}}</mat-radio-button>
+      </mat-radio-group>
+
+
+      <mat-divider></mat-divider>
+      <mat-radio-group class="radio-group" *ngIf="consumptionSorting == 0" [(ngModel)]="consumptionType"
+        name='radiobuttonsType' (change)="filterConsumptions()">
+        <mat-radio-button class="consumptionButton" [value]='undefined'>{{ 'MENU.SORT_ALL' | translate}}</mat-radio-button>
+        <mat-radio-button class="consumptionButton" value='STARTER'>Starter</mat-radio-button>
+        <mat-radio-button class="consumptionButton" value='MAIN'>Main</mat-radio-button>
+        <mat-radio-button class="consumptionButton" value='DESSERT'>Dessert</mat-radio-button>
+      </mat-radio-group>
+
+    </form>
+    <button mat-raised-button color="primary" class="confirm-button"
+      (click)="filterHidden = true">{{ 'MENU.FILTER_CONFIRM' | translate}}</button>
+  </div>
+  <div [hidden]="filterHidden" class="filter-overlay"></div>
+
+  <div class="search-container">
+    <mat-form-field class="search-form">
+      <input matInput type="text" maxlength="20" [(ngModel)]="searchValue" (keyup)="filterConsumptions()" placeholder="Zoeken..." name="search"
+        type="text" autofocus #searchBar>
+    </mat-form-field>
+    <button mat-icon-button (click)="filterHidden = false; enableScroll();"><img src="assets/filter.svg"></button>
+  </div>
+
+</div>
+
+<div class="menu-container">
+
+  <mat-card *ngFor="let consumption of filteredConsumptions" class="menu-item">
+    <mat-card-header>
+      <mat-card-title>{{ consumption.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image
+    [src]="getImage(consumption.id)" />
+    <mat-card-content>
+      <p>{{consumption.description}}</p>
+      <div class="allergens-icons">
+        <img *ngFor="let property of getIngredientProperties(consumption.id)" [src]="'assets/allergenen/' + 2 + property.toLocaleLowerCase() + '.png'">
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>€&nbsp;{{consumption.price | number:'1.2-2' }}</p>
+      <button mat-raised-button color="primary" (click)="addToOrder(consumption.id)">{{ 'MENU.ADD_ORDER' | translate}}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

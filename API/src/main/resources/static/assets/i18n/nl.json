@@ -1,0 +1,19 @@
+{
+    "HOME": {
+        "TABLE": "Tafel",
+         "EXPLANATION" : "Bestel je eten op een nieuwe en interactieve manier:",
+         "ORDER" : "Bestellen",
+         "BORING_EXPLANATION" : "Of bestel in plaats daarvan op de klassieke wijze:",
+         "MENU_CARD" : "Menukaart"
+    },
+
+    "SCAN": {
+        "INFO": "Met deze app bestel je gemakkelijk en snel je eten!",
+         "WELCOME" : "Welkom bij feedme",
+         "SCANNING" : "Scan de QR-code op de Tafel om te beginnen."
+    },
+
+    "MENU": {
+        "FILTER_CONFIRM": "Bevestigen"
+    }
+}

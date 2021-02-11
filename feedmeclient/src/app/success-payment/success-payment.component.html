@@ -1,0 +1,5 @@
+<div id="processEmblem">
+    <mat-spinner *ngIf="!done" diameter="200" class="successMarkUp" color="accent"></mat-spinner>
+    <img class="successMarkUp" src="../../assets/success.png" *ngIf="done"/>
+    <p *ngIf="done">{{ 'PAYMENT.APPROVED' | translate}}</p>
+</div>

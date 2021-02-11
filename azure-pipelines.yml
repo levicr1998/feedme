@@ -1,0 +1,77 @@
+# Docker
+# Build and push image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+  branches:
+    include:
+      - development
+  paths:
+    include:
+    - API/*
+    exclude:
+    - feedmeclient/*
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: '7da12761-5022-45c3-82d5-3f500d84fcb9'
+  imageRepository: 'feedmeapi'
+  containerRegistry: 'feedme.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/API/Dockerfile'
+  tag: '$(Build.BuildId)'
+  imagePullSecret: 'feedme1241555c-auth'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+  
+  # # Azure Service connection
+  azureConnection: 'b5ae9325-08da-40b6-9160-98f5d11f969f'
+  
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Maven@3
+      displayName: Package application with Maven
+      inputs:
+        mavenPomFile: 'API/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        publishJUnitResults: false
+        goals: 'package -Dmaven.test.skip=true'
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          CD
+
+- stage: Rebuild
+  displayName: Restart App Service
+  dependsOn: Build
+
+  jobs:
+  - job: Restart
+    displayName: Restart
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureAppServiceManage@0
+      displayName: Restart app service to pull image
+      inputs:
+        azureSubscription: 'Azure for Students (caa6da82-8214-4678-a2d4-a88dd0fe93d1)'
+        Action: 'Restart Azure App Service'
+        WebAppName: 'feedmeapi'

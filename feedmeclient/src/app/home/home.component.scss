@@ -1,0 +1,35 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.action-box {
+  width: 300px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  text-align: center;
+
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+    padding: 0;
+
+    a{
+      border: 1px solid;
+      padding: 15px;
+      margin: 0 9px;
+
+      img{
+        width: 58px;
+      }
+    }
+  }
+}

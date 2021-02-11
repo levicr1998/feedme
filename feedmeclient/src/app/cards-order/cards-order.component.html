@@ -1,0 +1,59 @@
+<div *ngIf='tutorialAllowed'>
+    <div class="cards-order-guide" *ngIf="guideProgress <= 2" (click)="progressGuide()">
+        <div class="guide-container swipe-guide" *ngIf="guideProgress == 0" (swiperight)="progressGuide()">
+            <div class="swipe-container">
+                <mat-icon [@swipeAnimatorRight]="guideRightState" (@swipeAnimatorRight.done)="changeGuideRightState()">
+                    double_arrow</mat-icon>
+            </div>
+            <p>Veeg naar rechts om toe te voegen aan je bestelling</p>
+            <p class="continue-text">Tap om door te gaan</p>
+        </div>
+        <div class="guide-container swipe-guide" *ngIf="guideProgress == 1" (swipeleft)="progressGuide()">
+            <div class="swipe-container">
+                <mat-icon [@swipeAnimatorLeft]="guideLeftState" (@swipeAnimatorLeft.done)="changeGuideLeftState()"
+                    class="rotate">double_arrow</mat-icon>
+            </div>
+            <p>Veeg naar links om het gerecht af te wijzen en het volgende gerecht te bekijken</p>
+            <p class="continue-text">Tap om door te gaan</p>
+        </div>
+        <div class="guide-container" *ngIf="guideProgress == 2">
+            <div class="menu-container">
+                <mat-icon [@menuAnimator]="guideMenuState" (@menuAnimator.done)="changeGuideMenuState()"
+                    style="margin-top: 52px">arrow_upward</mat-icon>
+            </div>
+            <p>Om op de klassieke wijze te bestellen, klik je hier.</p>
+            <p class="continue-text">Tap om door te gaan</p>
+        </div>
+    </div>
+</div>
+
+<div class="cards-order-content">
+    <mat-card *ngFor="let consumption of consumptions; index as i" [ngClass]="{'lowered': i < consumptions.length - 1}"
+        [@cardAnimator]="animationStates[i]" (@cardAnimator.done)="removeCard(i)" (swiperight)="swipeRight(i)"
+        (swipeleft)="swipeLeft(i)" cdkDrag (cdkDragMoved)="onCardMove($event)"
+        (cdkDragReleased)="onCardRelease($event, i)" [cdkDragDisabled]="i < consumptions.length - 1" id="card-{{i}}">
+        <mat-card-header>
+            <mat-card-title>{{ consumption.name }}</mat-card-title>
+            <button *ngIf="consumption.ingredients.length > 0" class="info-button" mat-icon-button
+                (click)="viewIngredients(i)">
+                <mat-icon>info_outline</mat-icon>
+            </button>
+        </mat-card-header>
+        <img draggable="false" mat-card-image [src]="getImage(consumption.id)" class="card-image" />
+        <mat-card-content>
+            <p>{{ consumption.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-icon-button (click)="swipeLeft(i)" class="dislike">
+                <mat-icon>close</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon style="transform: scale(-1, 1) rotate(-90deg);">refresh</mat-icon>
+            </button>
+            <button mat-icon-button (click)="swipeRight(i)" class="like">
+                <mat-icon>check</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+<div class="overlay"></div>

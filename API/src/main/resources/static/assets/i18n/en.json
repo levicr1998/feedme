@@ -1,0 +1,19 @@
+{
+    "HOME": {
+        "TABLE": "Table",
+        "EXPLANATION": "Order your food in a new and interactive way!",
+        "ORDER": "Start ordering",
+        "BORING_EXPLANATION": "Or use the classic way of ordering food:",
+        "MENU_CARD": "Menu"
+    },
+
+    "SCAN": {
+        "INFO": "Use this app to order fast and easy food!",
+        "WELCOME": "Welcome!",
+        "SCANNING": "Scan the QR-code on the table to start."
+    },
+
+    "MENU": {
+        "FILTER_CONFIRM": "Confirm"
+    }
+}

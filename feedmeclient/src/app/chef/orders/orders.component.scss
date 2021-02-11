@@ -1,0 +1,217 @@
+.order-list {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 25px;
+}
+
+.order-card {
+	width: 500px;
+	height: 80%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 16pt;
+
+    p{
+        font-size: 16pt;
+    }
+
+	.table-number {
+		font-size: 28pt;
+		text-align: center;
+	}
+
+	.content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+	}
+}
+
+.order {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dashed white;
+    cursor: pointer;
+
+    p {
+        margin-left: 20px;
+    }
+    
+    .amount{
+        margin-left: 10px;
+    }
+
+    .check {
+        margin-left: auto;
+        margin-right: 20px;
+        transform: scale(1.4);
+    }
+}
+
+.order.done p {
+    text-decoration: line-through;
+}
+
+.order.order-hover:hover > .check-box{
+    &::after {
+        content: "";
+        background: url(../../../assets/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 33px;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }
+
+    & > .amount-part {
+        transition: opacity 0.1s ease;
+        opacity: 0;
+    }
+
+    & > .amount-container {
+        transition: opacity 0.1s ease;
+        opacity: 0;
+    }
+}
+
+.order.hidden{
+    display: none;
+}
+
+.check-box {
+	position: absolute;
+	margin: 5px;
+	border: 1px solid white;
+	width: 55px;
+	height: 40px;
+	right: 5px;
+	display: flex;
+	align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    font-size: 16pt;
+    background-color: #424242;
+
+	.amount-part {
+		justify-self: center;
+		font-size: 18px;
+        margin: auto;
+	}
+
+	.amount-container {
+		position: absolute;
+		right: 0;
+		height: 40px;
+		width: 400px;
+		display: flex;
+
+		.amount-block {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-left: 1px solid white;
+		}
+
+		.amount-block:first-child {
+			border: none;
+		}
+
+		.amount-block:hover {
+			cursor: pointer;
+		}
+    }
+    
+    .amount-container.hidden{
+        display: none;
+    }
+}
+
+.alert-dot{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.6s;
+}
+
+.alert-dot.shrink{
+    width: 0px;
+    transform: scale(0);
+}
+
+.alert-dot:before {
+    content: " ";
+    position: absolute;
+	z-index: 2;
+	width: 10px;
+	height: 10px;
+	background-color: #ff4200;
+	border-radius: 50%;
+}
+
+.alert-dot:after {
+	content: " ";
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	background-color: #ff4200;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+	animation-name: "ripple";
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@keyframes ripple {
+    0% {
+     left:5px;
+     top:5px;
+     width:0;
+     height:0;
+   }
+   100% {
+     left:-15px;
+     top:-15px;
+     opacity: 0;
+     width:40px;
+     height:40px;
+   }
+ }
+
+ .ready-text{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+ .ready-container{
+    height: 150px;
+    overflow-y: auto;
+    flex-shrink: 0;
+
+    .ready-order{
+        opacity: 0.5;
+        cursor: default;
+        
+        p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+ }
